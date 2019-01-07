@@ -2,9 +2,11 @@
 This module allows you to send an email notification to the category owner when the order is placed successfully.
 
 ## Features
--> Send an email to category owner when the order is submitted.
--> Custom transitional email templates can be used from the backend.
--> Multiple category owners can be set.
+<ul>
+<li>Send an email to category owner when the order is submitted.</li>
+<li>Custom transitional email templates can be used from the backend.</li>
+<li>Multiple category owners can be set.</li>
+</ul>
 
 ## Requirements
 This plugin supports Magento2.x.x version or higher.
