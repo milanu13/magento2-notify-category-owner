@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<notifycatowner>
+			<options>
+				<enabled>1</enabled>
+				<email_sender>sales</email_sender>
+				<email_template>notifycatowner_options_email_template</email_template>
+			</options>
+		</notifycatowner>
+	</default>
+</config>

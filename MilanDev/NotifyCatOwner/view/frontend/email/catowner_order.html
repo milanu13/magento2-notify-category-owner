@@ -1,0 +1,56 @@
+<!--@subject {{trans "Cateowner Order Details"}} @-->
+<!--@vars {
+"var order_id":"Order ID",
+"var cust_email":"Customer Email",
+"var cust_name":"Customer Name",
+"var prod_name":"Produdct Name",
+"var prod_sku":"Produdct SKU",
+"var prod_qty_ordered":"Produdct Qty Order",
+"var prod_price_ordered":"Produdct Price Ordered",
+"var prod_total_price_ordered":"Produdct Total Price Ordered"
+
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<h2>Order Details:</h2>
+<table class="message-details">
+    <tr>
+        <td><b>{{trans "Order ID"}}</b></td>
+        <td>{{var order_id}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Product Name"}}</b></td>
+        <td>{{var prod_name}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Product SKU"}}</b></td>
+        <td>{{var prod_sku}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Qty"}}</b></td>
+        <td>{{var prod_qty_ordered}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Price"}}</b></td>
+        <td>{{var prod_price_ordered}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Total Price"}}</b></td>
+        <td>{{var prod_total_price_ordered}}</td>
+    </tr>
+</table>
+
+<h2>Customer Details:</h2>
+<table class="message-details">
+    <tr>
+        <td><b>{{trans "Name"}}</b></td>
+        <td>{{var cust_name}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Email"}}</b></td>
+        <td>{{var cust_email}}</td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}
